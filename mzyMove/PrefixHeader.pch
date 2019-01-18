@@ -1,0 +1,91 @@
+//
+//  PrefixHeader.pch
+//  mzyMove
+//
+//  Created by 杨广军 on 2019/1/16.
+//  Copyright © 2019 maoziyue. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+
+/**
+ * 屏幕尺寸size
+ */
+#define kScreenSize ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)] ? CGSizeMake([UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale, [UIScreen mainScreen].nativeBounds.size.height/[UIScreen mainScreen].nativeScale) : [UIScreen mainScreen].bounds.size)
+
+#define kScreenH ([[UIScreen mainScreen]bounds].size.height)
+#define kScreenW ([[UIScreen mainScreen]bounds].size.width)
+#define kScale       ([[UIScreen mainScreen]bounds].size.width / 375.0)
+#define kRatio(with) ((with)*(kScreenW / 375.0f))
+#define kFontSize(value)    (kScreenW == 320 ? value -1 : (kScreenW == 375 ? value : value + 1))
+#define kiPadRatio(with)  ((with)*(kScreenW / 768.0))
+
+// 状态栏高度
+#define kStatusHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+// 导航栏高度
+#define kNaviHeight (44)
+// 当上方有蓝条的时候,下视图的问题 有蓝条出现就是20,没蓝条出现就是0
+#define kBLUEBAR   ( kStatusHeight == 44 ? 0 : (kStatusHeight - 20) )
+// 导航栏和状态栏高度和
+#define kNavAndStatusHeight (kStatusHeight + kNaviHeight - kBLUEBAR)
+// iphone x 下方有34
+#define kBottomHeight (kStatusHeight == 44 ? 34 : 0 )
+
+
+
+
+
+
+
+/**
+ * 是否为空字符串
+ */
+#define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO)
+
+/**
+ * 是否为空数组
+ */
+#define kArrayIsEmpty(array) ([array isKindOfClass:[NSNull class]] || array == nil || array.count == 0)
+
+/**
+ * 是否为空子典
+ */
+#define kDictIsEmpty(dict) ([dict isKindOfClass:[NSNull class]] || dict == nil || dict.allKeys.count == 0)
+
+/**
+ * 是否为空对象 如果是空，  结果为1
+ */
+#define kObjectIsEmpty(_object) ([_object isKindOfClass:[NSNull class]] || _object == nil || ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) || ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ifdef DEBUG
+# define DLog(FORMAT, ...) fprintf(stderr,"\n\t[文件名: %s]\n\t[函数名: %s]\n\t[行号:%d]\n\t[打印: %s]\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __FUNCTION__,__LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+
+//# define DLog(fmt, ...) NSLog((@"\n\t[文件名:%s]\n""\t[函数名:%s]\n""\t[行号:%d] \n""\t[打印:" fmt "]\n\n"), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define DDLog(FORMAT, ...)   fprintf(stderr, "\n[%s]  function:%s line:%d content:%s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define DLog(...);
+#define DDLog(...);
+#endif
+
+
+
+
+
+
+#endif /* PrefixHeader_pch */

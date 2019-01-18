@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D78A951A6D4E72DB3B9AAD5 /* Pods_mzyMove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 106A7ED04D4BD8B3EB40B57B /* Pods_mzyMove.framework */; };
+		FE97856A21F0AB74003EF4BD /* AMapRouteRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97856921F0AB73003EF4BD /* AMapRouteRecord.m */; };
+		FE99FF5321EF0BAE0005CBE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF5221EF0BAE0005CBE7 /* AppDelegate.m */; };
+		FE99FF5621EF0BAE0005CBE7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF5521EF0BAE0005CBE7 /* ViewController.m */; };
+		FE99FF5921EF0BAE0005CBE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE99FF5721EF0BAE0005CBE7 /* Main.storyboard */; };
+		FE99FF5B21EF0BAF0005CBE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE99FF5A21EF0BAF0005CBE7 /* Assets.xcassets */; };
+		FE99FF5E21EF0BAF0005CBE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE99FF5C21EF0BAF0005CBE7 /* LaunchScreen.storyboard */; };
+		FE99FF6121EF0BAF0005CBE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF6021EF0BAF0005CBE7 /* main.m */; };
+		FE99FF6921EF143E0005CBE7 /* JBKTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF6821EF143E0005CBE7 /* JBKTestController.m */; };
+		FE99FF7021EF15820005CBE7 /* MapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF6E21EF15820005CBE7 /* MapManager.m */; };
+		FE99FF7121EF15820005CBE7 /* MapNaviManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF6F21EF15820005CBE7 /* MapNaviManager.m */; };
+		FE99FF8D21EF15A50005CBE7 /* YDXAnimatedAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF7321EF15A50005CBE7 /* YDXAnimatedAnnotation.m */; };
+		FE99FF8E21EF15A50005CBE7 /* YDXUserAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF7521EF15A50005CBE7 /* YDXUserAnnotation.m */; };
+		FE99FF8F21EF15A50005CBE7 /* YDXServiceAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF7621EF15A50005CBE7 /* YDXServiceAnnotation.m */; };
+		FE99FF9021EF15A50005CBE7 /* YDXGuidePolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF7721EF15A50005CBE7 /* YDXGuidePolyline.m */; };
+		FE99FF9121EF15A50005CBE7 /* YDXDestAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF7921EF15A50005CBE7 /* YDXDestAnnotation.m */; };
+		FE99FF9221EF15A50005CBE7 /* YDXCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF7A21EF15A50005CBE7 /* YDXCalloutView.m */; };
+		FE99FF9321EF15A50005CBE7 /* YDXRunPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF7B21EF15A50005CBE7 /* YDXRunPolyline.m */; };
+		FE99FF9421EF15A50005CBE7 /* YDImageAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF7C21EF15A50005CBE7 /* YDImageAnnotation.m */; };
+		FE99FF9521EF15A50005CBE7 /* YDXStartAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF7E21EF15A50005CBE7 /* YDXStartAnnotation.m */; };
+		FE99FF9621EF15A50005CBE7 /* YDXHistoryPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF7F21EF15A50005CBE7 /* YDXHistoryPolyline.m */; };
+		FE99FF9721EF15A50005CBE7 /* YDXStartDestAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF8321EF15A50005CBE7 /* YDXStartDestAnnotationView.m */; };
+		FE99FF9821EF15A50005CBE7 /* YDPopAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF8421EF15A50005CBE7 /* YDPopAnnotationView.m */; };
+		FE99FF9921EF15A50005CBE7 /* YDXPointAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF8821EF15A50005CBE7 /* YDXPointAnnotationView.m */; };
+		FE99FF9D21EF30120005CBE7 /* JBKLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = FE99FF9C21EF30120005CBE7 /* JBKLocations.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		106A7ED04D4BD8B3EB40B57B /* Pods_mzyMove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mzyMove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28BB7E656B0002C8B16ECF7F /* Pods-mzyMove.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mzyMove.release.xcconfig"; path = "Pods/Target Support Files/Pods-mzyMove/Pods-mzyMove.release.xcconfig"; sourceTree = "<group>"; };
+		C0C51640D3C0AE06EF474707 /* Pods-mzyMove.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mzyMove.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mzyMove/Pods-mzyMove.debug.xcconfig"; sourceTree = "<group>"; };
+		FE97856821F0AB73003EF4BD /* AMapRouteRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapRouteRecord.h; sourceTree = "<group>"; };
+		FE97856921F0AB73003EF4BD /* AMapRouteRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMapRouteRecord.m; sourceTree = "<group>"; };
+		FE99FF4E21EF0BAE0005CBE7 /* mzyMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mzyMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE99FF5121EF0BAE0005CBE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FE99FF5221EF0BAE0005CBE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FE99FF5421EF0BAE0005CBE7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FE99FF5521EF0BAE0005CBE7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FE99FF5821EF0BAE0005CBE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE99FF5A21EF0BAF0005CBE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE99FF5D21EF0BAF0005CBE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE99FF5F21EF0BAF0005CBE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE99FF6021EF0BAF0005CBE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE99FF6721EF143E0005CBE7 /* JBKTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBKTestController.h; sourceTree = "<group>"; };
+		FE99FF6821EF143E0005CBE7 /* JBKTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBKTestController.m; sourceTree = "<group>"; };
+		FE99FF6C21EF15820005CBE7 /* MapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapManager.h; sourceTree = "<group>"; };
+		FE99FF6D21EF15820005CBE7 /* MapNaviManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapNaviManager.h; sourceTree = "<group>"; };
+		FE99FF6E21EF15820005CBE7 /* MapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapManager.m; sourceTree = "<group>"; };
+		FE99FF6F21EF15820005CBE7 /* MapNaviManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapNaviManager.m; sourceTree = "<group>"; };
+		FE99FF7321EF15A50005CBE7 /* YDXAnimatedAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDXAnimatedAnnotation.m; sourceTree = "<group>"; };
+		FE99FF7421EF15A50005CBE7 /* YDXStartDestAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDXStartDestAnnotationView.h; sourceTree = "<group>"; };
+		FE99FF7521EF15A50005CBE7 /* YDXUserAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDXUserAnnotation.m; sourceTree = "<group>"; };
+		FE99FF7621EF15A50005CBE7 /* YDXServiceAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDXServiceAnnotation.m; sourceTree = "<group>"; };
+		FE99FF7721EF15A50005CBE7 /* YDXGuidePolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDXGuidePolyline.m; sourceTree = "<group>"; };
+		FE99FF7821EF15A50005CBE7 /* YDPopAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDPopAnnotationView.h; sourceTree = "<group>"; };
+		FE99FF7921EF15A50005CBE7 /* YDXDestAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDXDestAnnotation.m; sourceTree = "<group>"; };
+		FE99FF7A21EF15A50005CBE7 /* YDXCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDXCalloutView.m; sourceTree = "<group>"; };
+		FE99FF7B21EF15A50005CBE7 /* YDXRunPolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDXRunPolyline.m; sourceTree = "<group>"; };
+		FE99FF7C21EF15A50005CBE7 /* YDImageAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDImageAnnotation.m; sourceTree = "<group>"; };
+		FE99FF7D21EF15A50005CBE7 /* YDXPointAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDXPointAnnotationView.h; sourceTree = "<group>"; };
+		FE99FF7E21EF15A50005CBE7 /* YDXStartAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDXStartAnnotation.m; sourceTree = "<group>"; };
+		FE99FF7F21EF15A50005CBE7 /* YDXHistoryPolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDXHistoryPolyline.m; sourceTree = "<group>"; };
+		FE99FF8021EF15A50005CBE7 /* YDXAnimatedAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDXAnimatedAnnotation.h; sourceTree = "<group>"; };
+		FE99FF8121EF15A50005CBE7 /* YDXServiceAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDXServiceAnnotation.h; sourceTree = "<group>"; };
+		FE99FF8221EF15A50005CBE7 /* YDXUserAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDXUserAnnotation.h; sourceTree = "<group>"; };
+		FE99FF8321EF15A50005CBE7 /* YDXStartDestAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDXStartDestAnnotationView.m; sourceTree = "<group>"; };
+		FE99FF8421EF15A50005CBE7 /* YDPopAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDPopAnnotationView.m; sourceTree = "<group>"; };
+		FE99FF8521EF15A50005CBE7 /* YDXGuidePolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDXGuidePolyline.h; sourceTree = "<group>"; };
+		FE99FF8621EF15A50005CBE7 /* YDXHistoryPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDXHistoryPolyline.h; sourceTree = "<group>"; };
+		FE99FF8721EF15A50005CBE7 /* YDXStartAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDXStartAnnotation.h; sourceTree = "<group>"; };
+		FE99FF8821EF15A50005CBE7 /* YDXPointAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDXPointAnnotationView.m; sourceTree = "<group>"; };
+		FE99FF8921EF15A50005CBE7 /* YDImageAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDImageAnnotation.h; sourceTree = "<group>"; };
+		FE99FF8A21EF15A50005CBE7 /* YDXRunPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDXRunPolyline.h; sourceTree = "<group>"; };
+		FE99FF8B21EF15A50005CBE7 /* YDXCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDXCalloutView.h; sourceTree = "<group>"; };
+		FE99FF8C21EF15A50005CBE7 /* YDXDestAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDXDestAnnotation.h; sourceTree = "<group>"; };
+		FE99FF9A21EF15C40005CBE7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FE99FF9B21EF30120005CBE7 /* JBKLocations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBKLocations.h; sourceTree = "<group>"; };
+		FE99FF9C21EF30120005CBE7 /* JBKLocations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBKLocations.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE99FF4B21EF0BAE0005CBE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D78A951A6D4E72DB3B9AAD5 /* Pods_mzyMove.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2794742262878E422D974FCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0C51640D3C0AE06EF474707 /* Pods-mzyMove.debug.xcconfig */,
+				28BB7E656B0002C8B16ECF7F /* Pods-mzyMove.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9F325A6137D56AAB4941134D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				106A7ED04D4BD8B3EB40B57B /* Pods_mzyMove.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE99FF4521EF0BAE0005CBE7 = {
+			isa = PBXGroup;
+			children = (
+				FE99FF6A21EF155B0005CBE7 /* Code */,
+				FE99FF5021EF0BAE0005CBE7 /* mzyMove */,
+				FE99FF4F21EF0BAE0005CBE7 /* Products */,
+				2794742262878E422D974FCC /* Pods */,
+				9F325A6137D56AAB4941134D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FE99FF4F21EF0BAE0005CBE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE99FF4E21EF0BAE0005CBE7 /* mzyMove.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE99FF5021EF0BAE0005CBE7 /* mzyMove */ = {
+			isa = PBXGroup;
+			children = (
+				FE99FF5121EF0BAE0005CBE7 /* AppDelegate.h */,
+				FE99FF5221EF0BAE0005CBE7 /* AppDelegate.m */,
+				FE99FF5421EF0BAE0005CBE7 /* ViewController.h */,
+				FE99FF5521EF0BAE0005CBE7 /* ViewController.m */,
+				FE99FF6721EF143E0005CBE7 /* JBKTestController.h */,
+				FE99FF6821EF143E0005CBE7 /* JBKTestController.m */,
+				FE99FF9B21EF30120005CBE7 /* JBKLocations.h */,
+				FE99FF9C21EF30120005CBE7 /* JBKLocations.m */,
+				FE99FF5721EF0BAE0005CBE7 /* Main.storyboard */,
+				FE99FF5A21EF0BAF0005CBE7 /* Assets.xcassets */,
+				FE99FF5C21EF0BAF0005CBE7 /* LaunchScreen.storyboard */,
+				FE99FF5F21EF0BAF0005CBE7 /* Info.plist */,
+				FE99FF6021EF0BAF0005CBE7 /* main.m */,
+				FE99FF9A21EF15C40005CBE7 /* PrefixHeader.pch */,
+			);
+			path = mzyMove;
+			sourceTree = "<group>";
+		};
+		FE99FF6A21EF155B0005CBE7 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				FE99FF7221EF15A50005CBE7 /* Annotation */,
+				FE99FF6B21EF15820005CBE7 /* GMap */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		FE99FF6B21EF15820005CBE7 /* GMap */ = {
+			isa = PBXGroup;
+			children = (
+				FE97856821F0AB73003EF4BD /* AMapRouteRecord.h */,
+				FE97856921F0AB73003EF4BD /* AMapRouteRecord.m */,
+				FE99FF6C21EF15820005CBE7 /* MapManager.h */,
+				FE99FF6E21EF15820005CBE7 /* MapManager.m */,
+				FE99FF6D21EF15820005CBE7 /* MapNaviManager.h */,
+				FE99FF6F21EF15820005CBE7 /* MapNaviManager.m */,
+			);
+			path = GMap;
+			sourceTree = "<group>";
+		};
+		FE99FF7221EF15A50005CBE7 /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				FE99FF7321EF15A50005CBE7 /* YDXAnimatedAnnotation.m */,
+				FE99FF7421EF15A50005CBE7 /* YDXStartDestAnnotationView.h */,
+				FE99FF7521EF15A50005CBE7 /* YDXUserAnnotation.m */,
+				FE99FF7621EF15A50005CBE7 /* YDXServiceAnnotation.m */,
+				FE99FF7721EF15A50005CBE7 /* YDXGuidePolyline.m */,
+				FE99FF7821EF15A50005CBE7 /* YDPopAnnotationView.h */,
+				FE99FF7921EF15A50005CBE7 /* YDXDestAnnotation.m */,
+				FE99FF7A21EF15A50005CBE7 /* YDXCalloutView.m */,
+				FE99FF7B21EF15A50005CBE7 /* YDXRunPolyline.m */,
+				FE99FF7C21EF15A50005CBE7 /* YDImageAnnotation.m */,
+				FE99FF7D21EF15A50005CBE7 /* YDXPointAnnotationView.h */,
+				FE99FF7E21EF15A50005CBE7 /* YDXStartAnnotation.m */,
+				FE99FF7F21EF15A50005CBE7 /* YDXHistoryPolyline.m */,
+				FE99FF8021EF15A50005CBE7 /* YDXAnimatedAnnotation.h */,
+				FE99FF8121EF15A50005CBE7 /* YDXServiceAnnotation.h */,
+				FE99FF8221EF15A50005CBE7 /* YDXUserAnnotation.h */,
+				FE99FF8321EF15A50005CBE7 /* YDXStartDestAnnotationView.m */,
+				FE99FF8421EF15A50005CBE7 /* YDPopAnnotationView.m */,
+				FE99FF8521EF15A50005CBE7 /* YDXGuidePolyline.h */,
+				FE99FF8621EF15A50005CBE7 /* YDXHistoryPolyline.h */,
+				FE99FF8721EF15A50005CBE7 /* YDXStartAnnotation.h */,
+				FE99FF8821EF15A50005CBE7 /* YDXPointAnnotationView.m */,
+				FE99FF8921EF15A50005CBE7 /* YDImageAnnotation.h */,
+				FE99FF8A21EF15A50005CBE7 /* YDXRunPolyline.h */,
+				FE99FF8B21EF15A50005CBE7 /* YDXCalloutView.h */,
+				FE99FF8C21EF15A50005CBE7 /* YDXDestAnnotation.h */,
+			);
+			path = Annotation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE99FF4D21EF0BAE0005CBE7 /* mzyMove */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE99FF6421EF0BAF0005CBE7 /* Build configuration list for PBXNativeTarget "mzyMove" */;
+			buildPhases = (
+				D4869847DD65B2AAD450205B /* [CP] Check Pods Manifest.lock */,
+				FE99FF4A21EF0BAE0005CBE7 /* Sources */,
+				FE99FF4B21EF0BAE0005CBE7 /* Frameworks */,
+				FE99FF4C21EF0BAE0005CBE7 /* Resources */,
+				51E916AF92008E871E413CC4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mzyMove;
+			productName = mzyMove;
+			productReference = FE99FF4E21EF0BAE0005CBE7 /* mzyMove.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE99FF4621EF0BAE0005CBE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = maoziyue;
+				TargetAttributes = {
+					FE99FF4D21EF0BAE0005CBE7 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = FE99FF4921EF0BAE0005CBE7 /* Build configuration list for PBXProject "mzyMove" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE99FF4521EF0BAE0005CBE7;
+			productRefGroup = FE99FF4F21EF0BAE0005CBE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE99FF4D21EF0BAE0005CBE7 /* mzyMove */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE99FF4C21EF0BAE0005CBE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE99FF5E21EF0BAF0005CBE7 /* LaunchScreen.storyboard in Resources */,
+				FE99FF5B21EF0BAF0005CBE7 /* Assets.xcassets in Resources */,
+				FE99FF5921EF0BAE0005CBE7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51E916AF92008E871E413CC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mzyMove/Pods-mzyMove-resources.sh",
+				"${PODS_ROOT}/AMap3DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/AMapNavi-NO-IDFA/AMapNaviKit.framework/AMapNavi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMapNavi.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mzyMove/Pods-mzyMove-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4869847DD65B2AAD450205B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mzyMove-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE99FF4A21EF0BAE0005CBE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE99FF9D21EF30120005CBE7 /* JBKLocations.m in Sources */,
+				FE99FF5621EF0BAE0005CBE7 /* ViewController.m in Sources */,
+				FE99FF8F21EF15A50005CBE7 /* YDXServiceAnnotation.m in Sources */,
+				FE97856A21F0AB74003EF4BD /* AMapRouteRecord.m in Sources */,
+				FE99FF9621EF15A50005CBE7 /* YDXHistoryPolyline.m in Sources */,
+				FE99FF6921EF143E0005CBE7 /* JBKTestController.m in Sources */,
+				FE99FF7021EF15820005CBE7 /* MapManager.m in Sources */,
+				FE99FF9721EF15A50005CBE7 /* YDXStartDestAnnotationView.m in Sources */,
+				FE99FF9121EF15A50005CBE7 /* YDXDestAnnotation.m in Sources */,
+				FE99FF9021EF15A50005CBE7 /* YDXGuidePolyline.m in Sources */,
+				FE99FF9921EF15A50005CBE7 /* YDXPointAnnotationView.m in Sources */,
+				FE99FF6121EF0BAF0005CBE7 /* main.m in Sources */,
+				FE99FF7121EF15820005CBE7 /* MapNaviManager.m in Sources */,
+				FE99FF8E21EF15A50005CBE7 /* YDXUserAnnotation.m in Sources */,
+				FE99FF9321EF15A50005CBE7 /* YDXRunPolyline.m in Sources */,
+				FE99FF5321EF0BAE0005CBE7 /* AppDelegate.m in Sources */,
+				FE99FF8D21EF15A50005CBE7 /* YDXAnimatedAnnotation.m in Sources */,
+				FE99FF9521EF15A50005CBE7 /* YDXStartAnnotation.m in Sources */,
+				FE99FF9221EF15A50005CBE7 /* YDXCalloutView.m in Sources */,
+				FE99FF9821EF15A50005CBE7 /* YDPopAnnotationView.m in Sources */,
+				FE99FF9421EF15A50005CBE7 /* YDImageAnnotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE99FF5721EF0BAE0005CBE7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE99FF5821EF0BAE0005CBE7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE99FF5C21EF0BAF0005CBE7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE99FF5D21EF0BAF0005CBE7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE99FF6221EF0BAF0005CBE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FE99FF6321EF0BAF0005CBE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE99FF6521EF0BAF0005CBE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0C51640D3C0AE06EF474707 /* Pods-mzyMove.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U849E38UE8;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/mzyMove/PrefixHeader.pch";
+				INFOPLIST_FILE = mzyMove/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuedaowang.ydx.passenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE99FF6621EF0BAF0005CBE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28BB7E656B0002C8B16ECF7F /* Pods-mzyMove.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U849E38UE8;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/mzyMove/PrefixHeader.pch";
+				INFOPLIST_FILE = mzyMove/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuedaowang.ydx.passenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE99FF4921EF0BAE0005CBE7 /* Build configuration list for PBXProject "mzyMove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE99FF6221EF0BAF0005CBE7 /* Debug */,
+				FE99FF6321EF0BAF0005CBE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE99FF6421EF0BAF0005CBE7 /* Build configuration list for PBXNativeTarget "mzyMove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE99FF6521EF0BAF0005CBE7 /* Debug */,
+				FE99FF6621EF0BAF0005CBE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE99FF4621EF0BAE0005CBE7 /* Project object */;
+}
